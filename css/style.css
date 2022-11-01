@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --bgcolor1 : #b0bec5;
+    --bgcolor2 : #78909c;
+    --bgcolor3 : #37474f;
+    --pointerColor : #ffffff;
+    --headColor : #ffffff;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-image: linear-gradient(to right,var(--bgcolor1), var(--bgcolor3));
+}
+ul {
+    list-style: none;
+}
+.container {
+    width: 1000px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 150px 0px;
+    overflow: hidden;
+    position: relative;
+}
+.header {
+    text-align: center;
+    color: var(--headColor);
+    text-transform: uppercase;
+    font-size: 175%;
+    letter-spacing: 2px;
+}
+.slider {
+    width: 100%;
+    height: auto;
+}
+.slider ul {
+    display: flex;
+}
+.slider ul li {
+    display: inline-block;
+}
+.slider ul li img{
+    height: 300px;
+}
+img {
+    opacity: 0.75;
+}
+img:hover {
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+.pointer ul {
+    position: relative;
+    top: 50%;
+    left: 50%;
+}
+.pointer li {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--pointerColor);
+    margin: 0px 5px;
+    cursor: pointer;
+}
+.rgtPointer li {
+    font-size: 200%;
+    color: var(--pointerColor);
+    position: absolute;
+    bottom: 177px;
+    right: 1px;
+    cursor: pointer;
+}
+.rgtPointer li:hover {
+    color: var(--bgcolor1);
+    transition: 0.2s linear;
+}
+.pointer li:hover {
+    background-color: var(--bgcolor3);
+    transition: 0.2s linear;
+}
